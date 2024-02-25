@@ -1,4 +1,5 @@
-import Input_1 from "@/app/componentResources/inputs/Input_1";
+import Text_Input_1 from "@/app/componentResources/text-input/Text_Input_1";
+import Text_Input_2 from "@/app/componentResources/text-input/Text_Input_2";
 
 const InputLayout = () => {
     return (
@@ -7,7 +8,8 @@ const InputLayout = () => {
             <h1 className="text-3xl text-gray-700 font-bold">Text Input</h1>
             <span className="text-gray-600">Text Input is a simple input field.</span>
             </div>
-            <Input_1></Input_1>
+            <Text_Input_1></Text_Input_1>
+            <Text_Input_2></Text_Input_2>
         </div >
     );
 };

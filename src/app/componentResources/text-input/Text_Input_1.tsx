@@ -3,7 +3,7 @@ import CodeBlock from "@/app/componentResources/CodeBlock";
 import { useState } from "react";
 
 
-const Input_1 = () => {
+const Text_Input_1 = () => {
 
 
     const codeString = `
@@ -49,7 +49,6 @@ const Input_1 = () => {
         </div>
     </div>
     `;
-
 
 
     return (
@@ -105,4 +104,4 @@ const Input_1 = () => {
     );
 };
 
-export default Input_1;
+export default Text_Input_1;
