@@ -30,7 +30,7 @@ const Navbar = () => {
                             className="w-10"
                         />
                         <div className="flex flex-col items-start translate-y-2">
-                            <span className="text-lg font-bold uppercase text-[#34e7e4]">Elemental Kit</span>
+                            <span className="text-lg font-bold uppercase text-[#ef5777]">Elemental Kit</span>
                             <span className="text-gray-500 text-sm">React x Tailwind Component Library</span>
                         </div>
 

@@ -6,7 +6,7 @@ export interface GlobalReducerType {
 };
 
 const initialState = {
-    isSidebarOpen: false
+    isSidebarOpen: true
 } as GlobalReducerType;
 
 

@@ -9,9 +9,9 @@ export default function Home({ children }: any) {
   const { isSidebarOpen } = useAppSelector(state => state.globalReducer);
 
   return (
-    <div className="container min-h-[80vh] mx-auto text-gray-800 flex flex-col justify-start items-center">
+    <div className="container min-h-[80vh] mx-auto text-gray-600 flex flex-col justify-start items-center">
       <div className="w-full h-full text-center mt-24 space-y-3">
-        <h1 className="text-4xl text-gray-800 font-bold">
+        <h1 className="text-4xl text-gray-600 font-bold">
           Streamline UI Creation with
           <span className="text-[#34e7e4] font-semibold"> React.js | </span>
           <span className="text-[#34e7e4] font-semibold"> Next.js</span>
