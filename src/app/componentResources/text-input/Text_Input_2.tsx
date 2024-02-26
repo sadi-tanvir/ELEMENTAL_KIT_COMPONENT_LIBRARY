@@ -73,7 +73,7 @@ const Text_Input_2 = () => {
 
     return (
         <div className="w-full py-5 mt-10">
-
+            <h1 className="text-gray-600 font-bold text-2xl uppercase mb-3">Category #2</h1>
             <CodeBlock
                 wrapLines={false}
                 codeString={codeString}

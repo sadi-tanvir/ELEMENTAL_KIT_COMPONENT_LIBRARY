@@ -23,7 +23,8 @@ const SidebarNav = () => {
     const componentsName = [
         { id: 1, name: "Buttons", path: "/components/buttons" },
         { id: 2, name: "Text Inputs", path: "/components/text-inputs" },
-        { id: 3, name: "Accordion", path: "/components/accordion" },
+        { id: 3, name: "Forms", path: "/components/forms" },
+        { id: 4, name: "Accordion", path: "/components/accordion" },
     ]
 
     return (

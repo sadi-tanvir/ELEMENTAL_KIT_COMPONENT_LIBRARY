@@ -27,13 +27,13 @@ const CodeBlock = ({ wrapLines = true, codeString, children }: { wrapLines?: boo
 
     return (
         <>
-            <div className="border-2 border-gray-200 shadow rounded-2xl px-8 pb-8">
+            <div className="mx-auto border-2 border-gray-200 shadow rounded-2xl px-8 pb-8">
                 <div className="flex py-1 bg-[#fdcfd9] w-fit rounded-full px-2 my-3 shadow after:border-b-2">
                     <button onClick={() => setShowCode(false)} className={`px-7 py-2 rounded-full ${!showCode ? "bg-[#ef5777] shadow text-white" : "text-gray-600"} `}>Preview</button>
                     <button onClick={() => setShowCode(true)} className={`px-10 py-2 rounded-full ${showCode ? "bg-[#ef5777] shadow text-white" : "text-gray-600"} `}>JSX</button>
                 </div>
 
-                <div className=" border-t pt-10">
+                <div className="border-t pt-10">
                     {
                         showCode ?
                             // code block
@@ -54,7 +54,7 @@ const CodeBlock = ({ wrapLines = true, codeString, children }: { wrapLines?: boo
                                             </button>
                                     }
                                 </div>
-                                <SyntaxHighlighter language="jsx" style={vscDarkPlus} customStyle={{ padding: '20px' }} wrapLongLines={wrapLines}>
+                                <SyntaxHighlighter language="jsx" style={vscDarkPlus} customStyle={{ padding: '20px'}} wrapLongLines={wrapLines}>
                                     {codeString}
                                 </SyntaxHighlighter>
                             </div>

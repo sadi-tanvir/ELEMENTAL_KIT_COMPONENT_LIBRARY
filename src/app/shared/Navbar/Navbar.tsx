@@ -2,13 +2,14 @@
 import { useAppDispatch, useAppSelector } from "@/redux/hooks/hooks";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { BsArrowLeftSquareFill } from "react-icons/bs";
-import { FiAlignJustify } from "react-icons/fi";
 import Logo from "@/../public/logo.png";
 import { FaGithub } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+    // navigation
+    const pathname = usePathname();
+
     // redux
     const dispatch = useAppDispatch()
     const { isSidebarOpen } = useAppSelector(state => state.globalReducer);
@@ -42,7 +43,7 @@ const Navbar = () => {
 
                         {
                             navItems.map((nav) => (
-                                <Link key={nav.id} href={nav.path}>
+                                <Link className={`${pathname.split("/").includes(nav.path.split("/")[1]) ? "text-[#ef5777]" : "text-gray-700"}`} key={nav.id} href={nav.path}>
                                     <li>{nav.title}</li>
                                 </Link>
                             ))
@@ -53,7 +54,7 @@ const Navbar = () => {
                         <a target='_blank' href="https://github.com/sadi-tanvir">
                             <FaGithub
                                 color='white'
-                                className='bg-slate-500 rounded-full w-8 h-8 xl:w-12 xl:h-12'
+                                className='bg-slate-500 rounded-full w-8 h-8 xl:w-10 xl:h-10'
                             />
                         </a>
                     </div>
