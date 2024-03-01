@@ -5,7 +5,7 @@ Welcome to **ELEMENTAL KIT**, a versatile collection of React components styled 
 
 ## Live Demo
 
-Explore ELEMENTAL KIT live at [https://main--elemental-kit-library.netlify.app](https://main--elemental-kit-library.netlify.app).
+Explore ELEMENTAL KIT live at [https://elemental-kit-library.netlify.app](https://elemental-kit-library.netlify.app).
 
 
 ## Guidelines

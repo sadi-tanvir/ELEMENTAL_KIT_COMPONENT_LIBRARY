@@ -4,7 +4,7 @@ import { useState } from "react";
 const Components = () => {
     return (
         <div>
-            <h1 className='text-5xl p-20 text-green-500'>From Components Home</h1>
+            <h1 className="mt-10 text-3xl font-bold text-red-500 text-center">Update Soon....</h1>
         </div>
     );
 };

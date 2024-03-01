@@ -46,7 +46,7 @@ const CodeBlock = ({ wrapLines = true, codeString, children }: { wrapLines?: boo
                                     </div>
                                     {
                                         copy ?
-                                            <button className="text-white">
+                                            <button className="text-white uppercase">
                                                 copied
                                             </button> :
                                             <button title="copy" onClick={copyCode} className="text-white">

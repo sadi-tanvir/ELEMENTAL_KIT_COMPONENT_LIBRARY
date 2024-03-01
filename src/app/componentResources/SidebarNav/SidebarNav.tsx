@@ -56,7 +56,7 @@ const SidebarNav = () => {
                     <ul className={` w-[320px] xl:w-[480px] text-gray-600  py-3 px-3 rounded-lg overflow-hidden`}>
                         <Link href={"/components"}>
                             <li onClick={() => setOpenComponentMenu(!openComponentMenu)} className={` ${pathname.split("/").includes("components") ? "text-[#ef5777]" : "text-gray-700"} flex justify-start space-x-5 transition-all duration-300 ease-in-out  cursor-pointer`}>
-                                <p className={`${!isSidebarOpen ? "text-[#34e7e4]" : ""}`}>
+                                <p className={`${!isSidebarOpen ? "text-[#ef5777]" : ""}`}>
                                     <RxComponent2 className="text-2xl" />
                                 </p>
                                 <span className="text-xl xl:text-2xl font-semibold">Components</span>

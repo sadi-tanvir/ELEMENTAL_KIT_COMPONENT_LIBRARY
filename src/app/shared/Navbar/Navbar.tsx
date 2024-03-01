@@ -24,14 +24,18 @@ const Navbar = () => {
         <header className="w-full py-5 px-5  shadow-md">
             <nav className="flex justify-between">
                 <Link href={"/"}>
-                    <div className="flex items-center space-x-2">
-                        <Image
-                            src={Logo}
-                            alt="logo"
-                            className="w-10"
-                        />
+                    <div className="flex flex-col sm:flex-row  space-x-2">
+                        <div className="flex items-end space-x-2">
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                className="w-10"
+                            />
+                            <span className="sm:hidden text-lg font-bold uppercase text-[#ef5777]">Elemental Kit</span>
+                        </div>
+
                         <div className="flex flex-col items-start translate-y-2">
-                            <span className="text-lg font-bold uppercase text-[#ef5777]">Elemental Kit</span>
+                            <span className="hidden sm:block text-lg font-bold uppercase text-[#ef5777]">Elemental Kit</span>
                             <span className="text-gray-500 text-sm">React x Tailwind Component Library</span>
                         </div>
 
